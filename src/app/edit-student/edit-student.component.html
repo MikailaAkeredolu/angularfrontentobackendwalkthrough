@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+
+        <div class="mb-3" style="width:50%; margin:auto">
+       
+            <div class="row">
+                <h2 style="text-align: center;">Edt Student</h2>
+                <!-- <a routerLink="/list-students" routerLinkActive="active" style="text-decoration:none; text-align: center;" class="mb-5" >Cancel</a> -->
+
+            </div>
+      
+            <form (ngSubmit)="submitEditButton()"> 
+
+                <div class=" form-group mb-3">
+                    <label for="id" class="form-label">Student's ID</label>
+                    <input type="number" disabled class="form-control" id="id" [(ngModel)]="student.id" name="id">
+                  </div>
+
+                <div class=" form-group mb-3">
+                  <label for="name" class="form-label">Student's Name</label>
+                  <input type="text" class="form-control" id="name" [(ngModel)]="student.name" name="name">
+                </div>
+
+                 <div class="form-group mb-3">
+                    <label for="gpa" class="form-label">Student's GPA</label>
+                    <input type="number" class="form-control" id="gpa" [(ngModel)]="student.gpa" name="gpa">
+                 </div>
+
+                 <button type="submit" class="btn btn-primary" style="float: left;">Submit</button>
+
+            </form>
+
+    
+
+            
+
+          </div>
+    </div>
+
+</div>
+
+
